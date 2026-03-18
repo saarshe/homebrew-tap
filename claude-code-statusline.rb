@@ -5,21 +5,21 @@
 class ClaudeCodeStatusline < Formula
   desc "Customizable status line for Claude Code"
   homepage "https://github.com/saarshe/claude-code-statusline"
-  version "0.1.0-beta.2"
+  version "0.1.0-beta.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.2/claude-code-statusline_0.1.0-beta.2_darwin_amd64.tar.gz"
-      sha256 "d8a8b57d9c2ef7af344feca16958540bfc118df89f6f3813cf8280a014795b33"
+      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.3/claude-code-statusline_0.1.0-beta.3_darwin_amd64.tar.gz"
+      sha256 "0fba3c89d345ad97c2869f19d080fd47c5cf33ee6d76fbf24985cebccb8987cf"
 
       define_method(:install) do
         bin.install "claude-code-statusline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.2/claude-code-statusline_0.1.0-beta.2_darwin_arm64.tar.gz"
-      sha256 "11571af38402e5a20e76f5a8bab1c5c4c62ac8dc2383ac2094db9aeb150d4160"
+      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.3/claude-code-statusline_0.1.0-beta.3_darwin_arm64.tar.gz"
+      sha256 "9ff9b6b7055bb1cdfa6cddc9ff359c4a8a9e3fda9cedffe4666a6d99dce1d004"
 
       define_method(:install) do
         bin.install "claude-code-statusline"
@@ -29,15 +29,15 @@ class ClaudeCodeStatusline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.2/claude-code-statusline_0.1.0-beta.2_linux_amd64.tar.gz"
-      sha256 "391eb584ff18a2ce905776f48bc4327e67722b7f152c66848872446c2ced1088"
+      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.3/claude-code-statusline_0.1.0-beta.3_linux_amd64.tar.gz"
+      sha256 "168f8e6b9c3925982eb718ada7c8198405428a796fa1e2314c71ec3d6ef787e3"
       define_method(:install) do
         bin.install "claude-code-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.2/claude-code-statusline_0.1.0-beta.2_linux_arm64.tar.gz"
-      sha256 "aa62894f35b58a4a31dcb70073f02cb5a2e2a4befce8648f64895e3e08ad8542"
+      url "https://github.com/saarshe/claude-code-statusline/releases/download/v0.1.0-beta.3/claude-code-statusline_0.1.0-beta.3_linux_arm64.tar.gz"
+      sha256 "abcdd4cd58bd647f916f21a80d076ddcfe7fded58ab22a2ed12002b6163984c8"
       define_method(:install) do
         bin.install "claude-code-statusline"
       end
